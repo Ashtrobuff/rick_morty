@@ -23,7 +23,7 @@ Welcome to your React Native development internship assignment! This project ass
 6. **Pagination**: Load more characters as you scroll through the list.
 7. **Search**: Search for characters by name.
 8. **Animations**: Smooth transitions and animations for better user experience.
-<img width="361" alt="Screenshot 2024-08-29 at 10 20 35 PM" src="https://github.com/user-attachments/assets/964ef345-e7bd-401e-8061-4252b6b721e1">
+<img width="361" height="500" alt="Screenshot 2024-08-29 at 10 20 35 PM" src="https://github.com/user-attachments/assets/964ef345-e7bd-401e-8061-4252b6b721e1">
 <img width="351" alt="Screenshot 2024-08-29 at 10 19 31 PM" src="https://github.com/user-attachments/assets/3286c284-c255-4260-9fe4-1cad955427c7">
 <img width="365" alt="Screenshot 2024-08-29 at 10 20 27 PM" src="https://github.com/user-attachments/assets/3854b8d5-41c6-493d-b825-88b28da57699">
 <img width="356" alt="Screenshot 2024-08-29 at 10 20 15 PM" src="https://github.com/user-attachments/assets/99d60ed5-01ea-4542-a040-9e39bec1ba51">
