@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// App.js
 
-export default function App() {
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeScreen from './screens/HomeScreen';
+import CharacterListScreen from './screens/CharacterListScreen';
+import CharacterDetailScreen from './screens/CharacterDetailScreen';
+import FavoritesScreen from './screens/FavouritesScreen';
+import { Provider } from 'react-redux';
+const Stack = createStackNavigator();
+import store from './redux/store';
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}} />
+        <Stack.Screen name="CharacterList" component={CharacterListScreen} />
+        <Stack.Screen name="CharacterDetail" component={CharacterDetailScreen} />
+        <Stack.Screen name="Favourites" component={FavoritesScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+    </Provider>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
